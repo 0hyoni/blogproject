@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+.card {
+    padding: 60px 100px;
+    text-align: center;
+    width: 60rem;
+    margin-top: 80px;
+    margin-left: 250px;
+    position: relative;
+
+}
+</style>
+<br><br>
+<div class="card" >
+    <div class="card-body">
+      <h4 class="card-title">{{blog.title}}</h4>
+      <br>
+      <h6 class="card-subtitle mb-2 text-muted">{{blog.pub_date}}</h6>
+      <br>
+      <p class="card-text">{{blog.body}}<br></p>
+    </div>
+    <br>
+    <button type="button" class="btn btn-dark" onClick="location.href='{% url 'home' %}'">돌아가기</button>
+  </div>
+
